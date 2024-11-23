@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #292728d1;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #3dc6c9b1;
+  text-align: center;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #292728d1;
+  color:#fff;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>WELCOME TO APPLYEASY</h1>
+  <h3>The place where good employers and potential employees meet</h3>
+</div>
+
+<div class="topnav ">
+  <a href="employercompanypage.html">IT SECTOR</a>
+  <a href="employerothersectorpage.html">OTHER THAN IT SECTOR</a>
+  
+</div>
+<br><br>
+
+
+<div class="responsive">
+    <div class="gallery">
+      <a  href="googleemplogin.html">
+        <img src="google.jpg" alt="Cinque Terre" width="600" height="400px">
+      </a>
+      <div class="desc">ELIGIBLE CRITERIA:
+        Minimum cgpa 8
+        Language known: C,Java,C++
+        JOB ROLES AVAILABLE: Developer,Tester, Product manager,Tester</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a  href="amazonemplogin.html">
+        <img src="amazon.jpg" alt="Forest" width="600" height="400px">
+      </a>
+      <div class="desc">ELIGIBLE CRITERIA:
+        Minimum cgpa 8
+        language known: Java, python,React with Angular,Html, CSS 
+        JOB ROLES AVAILABLE:
+          Robotics technician ,IT specialist, procurement professionals, finance manager.</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a  href="appleemplogin.html">
+        <img src="apple.png" alt="Northern Lights" width="600" height="400px">
+      </a>
+      <div class="desc">ELIGIBLE CRITERIA:
+        Minimum cgpa 9.
+        Language known : Swift, object - C.
+        JOB ROLES AVAILABLE: 
+         Full stack developer,IN-Manager,Lead ASC Apple.</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a  href="microsoftemplogin.html">
+        <img src="microsoft.png" alt="Mountains" width="600" height="400px">
+      </a>
+      <div class="desc">ELIGIBLE CRITERIA:
+        Minimum cgpa 8.
+        Language known: C++, python.
+        JOB ROLES AVAILABLE:
+        Develop and market software, solution architect, Senior product marketing manager.</div>
+    </div>
+  </div>
+  
+  <div class="clearfix"></div>
+  
+  <br>
+  <hr>
+  <br>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="">
+        <img src="dell.jpg" alt="Cinque Terre" width="600" height="400px">
+      </a>
+      <div class="desc">ELIGIBLE CRITERIA:
+        Minimum cgpa 8.5
+        Language known: python, javascript.
+        JOB ROLES AVAILABLE:
+        Principal Systems Development Engineer,Production & Assembly Representative
+        Dell,Senior Engineer, Service Delivery
+        Dell Technologies.</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="">
+        <img src="intel.jpg" alt="Forest" width="600" height="400px">
+      </a>
+      <div class="desc">ELIGIBLE CRITERIA:
+        Minimum cgpa 8.
+        Language known:Java,.NET,php, python.
+        JOB ROLES AVAILABLE:
+        Software Application Development Engineer
+        INTEL,CPU Circuit Design Engineer,Analog Engineer
+        INTEL.</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="">
+        <img src="meta.jpg" alt="Northern Lights" width="600" height="400px">
+      </a>
+      <div class="desc">ELIGIBLE CRITERIA:
+        Minimum cgpa 8.
+        Language known:C++, python,Rust,Hack.
+        JOB ROLES AVAILABLE:
+        Specialist - Business Messaging
+        Meta,Graphic Design Lead
+        Meta Social,HR Recruiter</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="">
+        <img src="technovus.webp" alt="Mountains" width="600" height="400px">
+      </a>
+      <div class="desc">ELIGIBLE CRITERIA: 
+        Minimum cgpa 7.
+        Language known:  python,C,C++,Java.
+        JOB ROLES AVAILABLE:
+        Software Engineer
+        Data Scientist
+        UX/UI Designer
+        Product Manager.</div>
+    </div>
+  </div>
+  
+  <div class="clearfix"></div>
+  <br><hr><br>
+  
+
+</body>
+</html>
+
+

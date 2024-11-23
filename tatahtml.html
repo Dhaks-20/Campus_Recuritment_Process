@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.vl {
+  border-left: 2px solid rgba(0, 0, 0, 0.292);
+  
+  height: 550px;
+}
+
+
+/* Add padding to containers */
+.container {
+  width: 720px;
+  position: absolute;
+  right: 420px;
+  top: 10px;
+  padding: 10px;
+  
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04aaaafa;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+    background-color:  #ddd;
+  color: #04aaaafa;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("tatapic.jpg");
+  min-height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.next {
+  background-color: #04aaaafa;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+</style>
+</head>
+<body>
+
+    
+    <div class="bg-img ">
+        <div class="container">
+            <form action="tataphp.php"  method="POST" onsubmit="return ValidateForm(this);">
+                <script type="text/javascript">
+                    function ValidateForm(frm) {
+                    
+                        if (frm.s2.value == "") { alert(' Name is required.'); frm.s2.focus(); return false; }
+                        if (frm.s3.value == "") { alert('Email address is required.'); frm.s3.focus(); return false; }
+                        if (frm.s3.value.indexOf("@") < 1 || frm.s3.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.s3.focus(); return false; }
+                    
+                        if (frm.s6.value == "") { alert('Phone is required.'); frm.s6.focus(); return false; }
+                        return true;
+                    }
+                </script>
+                <div style="display: flex;">
+                    <div style="flex: 1;">
+                        <table border="0" cellpadding="5" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <b>Application number *</b>
+                                    <input name="s1" type="text" maxlength="30" style="width:100%;max-width: 300px; height: 30px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                 <b>Student Name *</b>
+                                    <input name="s2" type="text" maxlength="50" style="width:100%;max-width: 300px; height: 30px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Email *</b><br>
+                                    <input name="s3" type="text" maxlength="100" style="width:100%;max-width: 300px; height: 30px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                              <b>Position you are applying for *</b>
+                                    <input name="s4" type="text" maxlength="100" style="width:100%;max-width: 300px; height: 30px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <b>Salary requirements</b>
+                                    <input name="s5" type="text" maxlength="50" style="width:100%;max-width: 300px; height: 30px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Phone *</b><br>
+                                    <input name="s6" type="text" maxlength="50" style="width:100%;max-width: 300px; height: 30px;" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="vl"></div> <br>
+                    <div style="flex: 1;">
+                        <table border="0" cellpadding="10" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <b>When can you start?</b>
+                                    <input name="s7" type="text" maxlength="50" style="width:100%;max-width: 300px; height: 30px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Educational Qualification *</b>
+                                    <input name="s8" type="text" maxlength="100" style="width:100%;max-width: 300px; height: 30px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Last company you worked for</b>
+                                    <input name="s9" type="text" maxlength="100" style="width:100%;max-width: 300px; height: 30px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Why do you want this job ? *</b>
+                                    <textarea name="s10" rows="7" cols="40" style="width:100%;max-width: 300px; height: 100px;"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b style="color: red;">Application status</b>
+                                    <input name="s11" type="text" maxlength="50" style="width:100%;max-width: 300px; height: 30px;" placeholder="Note:Not to be filled by student" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <button type="submit" class="btn btn-secondary" >Submit Application Form</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </form>
+         
+         <button type="submit" class="btn btn-secondary" onclick="document.location='tatastatusphp.php'">Check status(if already applied)</button>
+           
+        </div>
+        
+       
+    </div>
+
+</body>
+</html>
